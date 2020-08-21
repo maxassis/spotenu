@@ -1,13 +1,13 @@
 import React from 'react'
 import * as S from './styled'
-import Fundo from '../imagens/Originals/fundo.png'
+import Fundo from '../imagens/fundo.png'
 
 
 function ImgViolao() {
     return(
         <>
         <S.Violao>
-        <img src={Fundo} />
+        <S.Imagem src={Fundo} />
         <S.Anuncio> 
         <S.P1>Spotenu Premium</S.P1>
         <S.P2>3 Meses Gratuitos</S.P2>

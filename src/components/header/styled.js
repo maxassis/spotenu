@@ -22,7 +22,7 @@ export const Titulo = styled.p`
 
 export const Botao1 = styled.button`
     position: relative;
-    left: 400px;  
+    left: 390px;  
     border-radius: 50px;
     border: 2px solid;
     border-color: #fe91ca; 

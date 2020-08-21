@@ -1,8 +1,13 @@
 import styled from 'styled-components'
 
+export const Imagem = styled.img`
+    width: 100%;
 
+
+`
 
 export const Violao = styled.div`
+  position: relative;
   
 
 `
@@ -11,7 +16,7 @@ export const Anuncio = styled.div`
     color: white;
     position: relative;
     bottom: 600px;
-    left: 120px;
+    margin-left: 120px;
 
 `
 
@@ -46,5 +51,7 @@ export const BotaoAssinar = styled.button`
     background-color: #fe91ca
 
 `
+
+
 
 
