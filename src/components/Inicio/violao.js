@@ -7,7 +7,7 @@ function ImgViolao() {
     return(
         <>
         <S.Violao>
-        <S.Imagem src={Fundo} />
+       {/* <S.Imagem src={Fundo} /> */}
         <S.Anuncio> 
         <S.P1>Spotenu Premium</S.P1>
         <S.P2>3 Meses Gratuitos</S.P2>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Check } from '@styled-icons/boxicons-regular/Check'
 import { Cross } from '@styled-icons/entypo/Cross'
+import Fundo from '../imagens/fundo.png'
 
 
 
@@ -9,17 +10,21 @@ export const Imagem = styled.img`
 `;
 
 export const Violao = styled.div`
-  max-height: 730px;
+  display: flex;
+  justify-content: center;
+  height: 730px;
+  width: 100%;
   display:flex;
   flex-direction: column;
+  background-image: url("https://images2.imgbox.com/01/1b/cBG6gceO_o.png")
 `;
 
 export const Anuncio = styled.div`
   color: white;
-  position: relative;
-  bottom: 570px;
-  margin-left: 120px;
-`;
+  margin-left: 100px;
+  margin-bottom: 50px;
+
+`
 
 export const P1 = styled.p`
   font-family: "Thasadith", sans-serif;
@@ -190,12 +195,16 @@ export const RedCross = styled(Cross)`
 
 export const Items = styled.p`
   margin-left: 20px;
+  font-family: 'Thasadith', sans-serif;
+  font-size: 15px;
 
 
 `
 export const ItemsRiscados = styled.p`
   text-decoration: line-through;
   margin-left: 20px;
+  font-family: 'Thasadith', sans-serif;
+  font-size: 15px;
 
 `
 
