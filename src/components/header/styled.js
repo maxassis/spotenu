@@ -1,28 +1,29 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    display: flex;
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
     height: 80px;
     align-items: center;
-    justify-content: space-evenly;
-    
+
 
 `
 
 export const Titulo = styled.p`
+    display: grid;
     color: black;
-    position: relative;
     font-size: 25px;
-    right: 130px;
-    
-    
-
-
+    grid-column-start: 2; 
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2; 
+   
 `
 
 export const Botao1 = styled.button`
-    position: relative;
-    left: 390px;  
+    display: block;
+    margin-left: auto;
     border-radius: 50px;
     border: 2px solid;
     border-color: #fe91ca; 
@@ -31,18 +32,22 @@ export const Botao1 = styled.button`
     background-color: white;
     color: #fe91ca;
     font-family: 'Thasadith', sans-serif;
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    
 `
 
 export const Botao2 = styled.button`
     background-color: #fe91ca;
     color: white;
     border: none;
-    position: relative;
-    left: 130px;
     border-radius: 50px;
     width: 90px;
     padding: 10px;
     font-family: 'Thasadith', sans-serif;
-
+    grid-column-start: 4; 
+    grid-column-end: 5; 
+    margin-left: 10px;
+    
 
 `

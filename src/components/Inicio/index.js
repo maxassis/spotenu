@@ -1,13 +1,10 @@
 import React from 'react'
 import Header from '../header'
 import ImgViolao from './violao'
-import styled from 'styled-components'
+import Musicas from './musicas'
+import Footer from '../footer'
 
 
-const Paragrafo = styled.p`
-    background-color: green;
-
-`
 
 
 function Inicio() {
@@ -15,7 +12,9 @@ function Inicio() {
         <>
         <Header/>
         <ImgViolao/>
-        </>    
+        <Musicas/>
+        <Footer/>
+        </> 
 
 
     )
