@@ -77,6 +77,7 @@ export const Paragrafo2 = styled.p`
     font-size: 20px;
     order: 5;
     text-align: left;
+    padding-left: 40px;
     
 
     `
@@ -104,5 +105,61 @@ export const Capa5 = styled.img`
 `
 export const Capa6 = styled.img`
     order: 8;
+
+`
+
+
+
+// PLANOS
+
+
+export const Cont = styled.div`
+    max-width: 100%;
+    height: 600px;
+    
+
+
+`
+
+export const Quadros = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr
+
+`
+
+
+export const Quadro1 = styled.div`
+    width: 350px;
+    height: 400px;
+    background-color: yellow;
+    margin: auto;
+
+
+
+`
+export const Quadro2 = styled.div`
+    width: 350px;
+    height: 400px;
+    background-color: yellow;
+    margin: auto;
+
+
+
+`
+
+
+export const Vantagens = styled.p`
+    text-align: center;
+    font-size: 40px;
+    font-family: "Thasadith", sans-serif;
+    padding-top: 35px;
+    padding-bottom: 40px;
+
+
+
+`
+
+export const Premium = styled.p`
+    text-align:center;
 
 `

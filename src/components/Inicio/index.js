@@ -3,7 +3,7 @@ import Header from '../header'
 import ImgViolao from './violao'
 import Musicas from './musicas'
 import Footer from '../footer'
-
+import Planos from './planos'
 
 
 
@@ -13,7 +13,8 @@ function Inicio() {
         <Header/>
         <ImgViolao/>
         <Musicas/>
-        <Footer/>
+        <Planos/>
+        <Footer/> 
         </> 
 
 
