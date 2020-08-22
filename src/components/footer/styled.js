@@ -38,7 +38,7 @@ export const Tabela = styled.div`
     }
     spam{
         display:block;
-        font-size: 18px;
+        font-size: 16px;
         padding: 10px 0 10px 0;
         font-family: 'Thasadith', sans-serif;
     }

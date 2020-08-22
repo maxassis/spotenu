@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { Check } from '@styled-icons/boxicons-regular/Check'
+import { Cross } from '@styled-icons/entypo/Cross'
+
+
 
 export const Imagem = styled.img`
   width: 100%;
@@ -117,8 +121,6 @@ export const Cont = styled.div`
     max-width: 100%;
     height: 600px;
     
-
-
 `
 
 export const Quadros = styled.div`
@@ -127,21 +129,25 @@ export const Quadros = styled.div`
 
 `
 
-
 export const Quadro1 = styled.div`
-    width: 350px;
+    width: 300px;
     height: 400px;
-    background-color: yellow;
     margin: auto;
-
-
+    border:solid 1px;
+    border-color: #ebecf1;
+    margin-right: 100px;
+    border-radius: 4%;
+    
 
 `
 export const Quadro2 = styled.div`
-    width: 350px;
+    width: 300px;
     height: 400px;
-    background-color: yellow;
-    margin: auto;
+    margin-left: 100px;
+    border:solid 1px;
+    border-radius: 4%;
+    border-color: #fe91ca;
+    box-shadow: 0 0 1em #fe91ca;
 
 
 
@@ -153,7 +159,8 @@ export const Vantagens = styled.p`
     font-size: 40px;
     font-family: "Thasadith", sans-serif;
     padding-top: 35px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
+    
 
 
 
@@ -161,5 +168,62 @@ export const Vantagens = styled.p`
 
 export const Premium = styled.p`
     text-align:center;
+    font-family: "Thasadith", sans-serif;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 
+`
+
+export const GreenCheck = styled(Check)`
+    color: green;
+    width: 25px;
+
+`
+
+export const RedCross = styled(Cross)`
+  color: red;
+  width: 25px;
+
+`
+
+export const Items = styled.p`
+  margin-left: 20px;
+
+
+`
+export const ItemsRiscados = styled.p`
+  text-decoration: line-through;
+  margin-left: 20px;
+
+`
+
+export const Botao2 = styled.button`
+    background-color: #fe91ca;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    padding: 10px;
+    font-family: 'Thasadith', sans-serif;
+    margin-left: 75px;
+    margin-top: 50px;
+    font-size: 15px;
+    box-shadow: 0 0 1em #fe91ca;
+    
+`
+export const Botao1 = styled.button`
+    background-color: #e8ded2;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #e8ded2; 
+    width: 150px;
+    padding: 10px;
+    font-family: 'Thasadith', sans-serif;
+    margin-left: 75px;
+    margin-top: 50px;
+    font-size: 15px;
+    
 `
