@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    width: 100%;
     display: grid;
     grid-column: 1fr 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
     height: 80px;
     align-items: center;
-    box-shadow: 0 0 0.5em #fe91ca;
+    box-shadow: 0 0 0.3em #fe91ca;
 
 
 `

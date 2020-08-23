@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Check } from '@styled-icons/boxicons-regular/Check'
 import { Cross } from '@styled-icons/entypo/Cross'
-import Fundo from '../imagens/fundo.png'
 
 
 
@@ -21,7 +20,7 @@ export const Violao = styled.div`
 
 export const Anuncio = styled.div`
   color: white;
-  margin-left: 100px;
+  margin-left: 110px;
   margin-bottom: 50px;
 
 `

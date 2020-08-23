@@ -10,8 +10,6 @@ export const Container = styled.div`
 
 
 
-
-
 `
 
 export const ContSignup = styled.div`
