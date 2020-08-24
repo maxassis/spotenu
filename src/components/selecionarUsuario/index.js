@@ -9,10 +9,15 @@ function SelecionarUsuario() {
         <>
         <Header/>
             <S.Container>
-                <p>Escolha o tipo de usuario</p>
-             { /*  <S.Quadro1><S.Titulos>OUVINTES</S.Titulos></S.Quadro1>
-                <S.Quadro2><S.Titulos>BANDAS</S.Titulos></S.Quadro2>
-             <S.Quadro3><S.Titulos>ADMINISTRADOR</S.Titulos></S.Quadro3> */}
+                <S.Plans>
+                <S.Usuario>Escolha o tipo de usuario</S.Usuario>
+                </S.Plans>
+
+              <S.Quadros>  
+             <S.Quadro1><S.Titulos>OUVINTES</S.Titulos></S.Quadro1>
+            <S.Quadro2><S.Titulos>BANDAS</S.Titulos></S.Quadro2>
+             <S.Quadro3><S.Titulos>ADMINISTRADOR</S.Titulos></S.Quadro3>
+              </S.Quadros>
 
              </S.Container>
         <Footer/>        

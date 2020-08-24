@@ -28,11 +28,11 @@ export const Botao1 = styled.button`
     margin-left: auto;
     border-radius: 50px;
     border: 2px solid;
-    border-color: #fe91ca; 
+    border-color: #6a2c70; 
     width: 90px;
     padding: 10px;
     background-color: white;
-    color: #fe91ca;
+    color: #6a2c70;
     font-family: 'Thasadith', sans-serif;
     grid-column-start: 3; 
     grid-column-end: 4; 
@@ -40,7 +40,7 @@ export const Botao1 = styled.button`
 `
 
 export const Botao2 = styled.button`
-    background-color: #fe91ca;
+    background-color: #6a2c70;
     color: white;
     border: none;
     border-radius: 50px;

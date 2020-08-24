@@ -15,7 +15,7 @@ export const Violao = styled.div`
   width: 100%;
   display:flex;
   flex-direction: column;
-  background-image: url("https://images2.imgbox.com/01/1b/cBG6gceO_o.png")
+  background-image: url("https://images2.imgbox.com/ff/f5/QtkMdkQ4_o.png")
 `;
 
 export const Anuncio = styled.div`

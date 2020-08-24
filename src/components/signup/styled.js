@@ -16,8 +16,8 @@ export const ContSignup = styled.div`
     width: 500px;
     height: 550px;
     border: 1px solid;
-    border-color: #59405c;
     border-radius: 4%;
+    border-color: #f3e6e3;
 
 
 `

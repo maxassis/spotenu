@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <GlobalStyles/>
-     {/* <Inicio/> */}
-     {/* <Signup/> */}
-      <SelecionarUsuario/>
+     { /* <Inicio/> */} 
+      <Signup/> 
+     {/* <SelecionarUsuario/> */}
 
     </>
   );
