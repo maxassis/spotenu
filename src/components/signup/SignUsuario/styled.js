@@ -1,10 +1,12 @@
 import styled from 'styled-components'
+import Select from './index'
+import {Input} from './index'
 
 
 export const Container = styled.div`
     display:flex;
     width: 100%;
-    height: 500px;
+    height: 600px;
     justify-content: center;
     align-items: center;
 
@@ -18,7 +20,7 @@ export const ContSignup = styled.div`
     align-items: center;
     flex-direction: column;
     width: 400px;
-    height: 430px;
+    height: 550px;
     border: 1px solid;
     border-radius: 4%;
     border-color: #f3e6e3;
@@ -35,10 +37,18 @@ export const Formulario = styled.form`
     align-items: center;
     margin-bottom: 100px;
 
+   /* select{
+    width:  82%;
+    margin: 5px;
+    padding: 8px; */
+
+    }
+
 `
 
 export const Divi = styled.div`
-    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-top: 20px;
 
 
 `
@@ -79,3 +89,11 @@ export const Botao = styled.button`
 
 
 `
+export const Selecti = styled.select`
+    width:  82%;
+    margin: 5px;
+    padding: 8px;
+
+
+`
+
