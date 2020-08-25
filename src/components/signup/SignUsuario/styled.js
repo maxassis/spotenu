@@ -37,17 +37,11 @@ export const Formulario = styled.form`
     align-items: center;
     margin-bottom: 100px;
 
-   /* select{
-    width:  82%;
-    margin: 5px;
-    padding: 8px; */
-
-    }
 
 `
 
 export const Divi = styled.div`
-    margin-bottom: 60px;
+    margin-bottom: 75px;
     margin-top: 20px;
 
 
@@ -62,7 +56,7 @@ export const Texto = styled.p`
 
 export const Inputi = styled.input`
     width:  75%;
-    margin: 5px;
+    margin: 4px;
     padding: 8px;
 
 
@@ -90,7 +84,7 @@ export const Botao = styled.button`
 
 `
 export const Selecti = styled.select`
-    width:  82%;
+    width:  80%;
     margin: 5px;
     padding: 8px;
 
