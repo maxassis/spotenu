@@ -5,7 +5,7 @@ import SignupUsuario from './components/signup/SignUsuario/index';
 import SelecionarUsuario from './components/selecionarUsuario';
 import Login from './components/login/index'
 import SignupBanda from './components/signup/SignBanda/index'
-
+import SignupAdm from './components/signup/SignAdm/index'
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
      {/* <SignupUsuario/> */} 
      {/* <SelecionarUsuario/> */}
       {/*<Login/>*/}
-      <SignupBanda/>
+     {/* <SignupBanda/> */}
+      <SignupAdm/>
 
     </>
   );
