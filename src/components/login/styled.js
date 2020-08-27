@@ -19,9 +19,8 @@ export const ContSignup = styled.div`
     flex-direction: column;
     width: 400px;
     height: 400px;
-    border: 1px solid;
-    border-radius: 4%;
-    border-color: #f3e6e3;
+    border: none;
+    
 
 
 `
@@ -63,7 +62,7 @@ export const Inputi = styled.input`
 export const Leibel = styled.label`
     align-self: flex-start;
     margin-left: 33px;
-    margin-top: 25px;
+    margin-top: 15px;
     font-family: "Thasadith", sans-serif;
 
 

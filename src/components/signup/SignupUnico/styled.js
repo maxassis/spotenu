@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { AlertTriangleOutline} from '@styled-icons/evaicons-outline/AlertTriangleOutline'
+
 
 
 export const Container = styled.div`
     display:flex;
     width: 100%;
-    height: 750px;
+    height: 700px;
     justify-content: center;
     align-items: center;
 
@@ -19,55 +19,37 @@ export const ContSignup = styled.div`
     align-items: center;
     flex-direction: column;
     width: 400px;
-    height: 500px;
-    border: 1px solid;
-    border-radius: 4%;
-    border-color: #f3e6e3;
+    height: 580px;
+    border: none;
     
+
 
 
 `
 
 export const Formulario = styled.form`
     width: 350px;
-    height: 350px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 
 
 `
 
 export const Divi = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 0px;
-
-    
-`
-export const Alerta = styled.p`
-    color: red;
-    text-align: center;
-   
-
-`
-
-export const Aviso = styled(AlertTriangleOutline)`
-    width: 20px;
+    margin-bottom: 0px;
+    margin-top: 30px;
 
 
 `
-
-
-
 
 export const Texto = styled.p`
     font-size: 30px;
     font-family: "Thasadith", sans-serif;
+    margin-bottom: 25px;
 
 `
 
@@ -83,7 +65,7 @@ export const Inputi = styled.input`
 export const Leibel = styled.label`
     align-self: flex-start;
     margin-left: 33px;
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: "Thasadith", sans-serif;
 
 
@@ -109,3 +91,12 @@ export const Selecti = styled.select`
 
 `
 
+export const TextArea = styled.textarea`
+    resize: none;
+  box-sizing: border-box;
+  width: 80%;
+  height: 80px;
+
+
+
+`

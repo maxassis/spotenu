@@ -6,18 +6,32 @@ import SelecionarUsuario from './components/selecionarUsuario';
 import Login from './components/login/index'
 import SignupBanda from './components/signup/SignBanda/index'
 import SignupAdm from './components/signup/SignAdm/index'
+import SignupUnico from './components/signup/SignupUnico/index'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <GlobalStyles/>
-     { /* <Inicio/> */} 
-     {/* <SignupUsuario/> */} 
-     {/* <SelecionarUsuario/> */}
-      {/*<Login/>*/}
-     {/* <SignupBanda/> */}
-      <SignupAdm/>
+      <BrowserRouter>
+      
+        <Switch>
 
+          <Route exact path='/login'>
+            <Login />
+          </Route>
+
+          <Route exact path='/signup'>
+            <SignupUnico />
+          </Route>
+
+          <Route exact path='/'>
+            <Inicio />
+          </Route>
+
+        </Switch>
+      
+      </BrowserRouter>
     </>
   );
 }
