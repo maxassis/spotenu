@@ -11,7 +11,7 @@ function Login() {
 
     return(
         <>
-         <Header/>
+         <Header pagina="Inicio" pagina2="Signup" url="/" url2="/signup"/>
         <S.Container>
         <S.ContSignup>
             <S.Divi>
@@ -30,7 +30,7 @@ function Login() {
 
             <S.Botao type="submit">Enviar</S.Botao> 
 
-            <S.Inscrevase>Nao possui inscrição ? <a href="/">Inscreva-se</a></S.Inscrevase>
+            <S.Inscrevase>Nao possui inscrição ? <S.Linki to="/signup">Inscreva-se</S.Linki></S.Inscrevase>
 
             </S.Formulario>
 

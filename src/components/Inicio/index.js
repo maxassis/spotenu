@@ -10,7 +10,7 @@ import Planos from './planos'
 function Inicio() {
     return(
         <>
-        <Header/>
+        <Header pagina="Login" pagina2="Signup" url="/login" url2="/signup"/>
         <ImgViolao/>
         <Musicas/>
         <Planos/>

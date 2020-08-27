@@ -19,7 +19,7 @@ function SignupUnico() {
 
     return(
         <>
-        <Header/>
+        <Header pagina="Inicio" pagina2="Login" url="/" url2="/login"/>
         <S.Container>
         <S.ContSignup>
             <S.Divi>

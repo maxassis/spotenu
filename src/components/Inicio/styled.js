@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { Check } from '@styled-icons/boxicons-regular/Check'
 import { Cross } from '@styled-icons/entypo/Cross'
-
+import { Link } from 'react-router-dom'
 
 
 export const Imagem = styled.img`
   width: 100%;
-`;
+`
 
 export const Violao = styled.div`
   display: flex;
@@ -15,8 +15,9 @@ export const Violao = styled.div`
   width: 100%;
   display:flex;
   flex-direction: column;
-  background-image: url("https://images2.imgbox.com/ff/f5/QtkMdkQ4_o.png")
-`;
+  background-image: url("https://images2.imgbox.com/b4/d2/ysVbBRq1_o.png");
+
+`
 
 export const Anuncio = styled.div`
   color: white;
@@ -69,7 +70,7 @@ export const Paragrafo1 = styled.p`
     display: grid;
     position: relative;
     align-items: flex-end;
-    bottom: 20px;
+    bottom: 15px;
     font-family: "Thasadith", sans-serif;
     font-size: 38px;
     font-weight: bold;
@@ -209,7 +210,7 @@ export const ItemsRiscados = styled.p`
 
 export const Botao2 = styled.button`
     background-color: #fe91ca;
-    color: white;
+    color: black;
     border: none;
     border-radius: 50px;
     width: 150px;
@@ -234,4 +235,10 @@ export const Botao1 = styled.button`
     margin-top: 50px;
     font-size: 15px;
     
+`
+export const Linki = styled(Link)`
+    text-decoration: none;
+    color: black;
+
+
 `

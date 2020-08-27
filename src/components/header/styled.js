@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
     width: 100%;
@@ -53,3 +54,21 @@ export const Botao2 = styled.button`
     
 
 `
+export const Linki = styled(Link)`
+    text-decoration: none;
+    color: #6a2c70;
+
+`
+
+export const Linki2 = styled(Link)`
+    text-decoration: none;
+    color: white;
+
+`
+
+export const Linki3 = styled(Link)`
+    text-decoration: none;
+    color: black;
+
+`
+

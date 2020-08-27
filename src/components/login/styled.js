@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 export const Container = styled.div`
@@ -92,5 +93,10 @@ export const Inscrevase = styled.p`
     font-family: 'Thasadith', sans-serif;
     margin-top: 20px;
 
+
+`
+
+export const Linki = styled(Link)`
+    color: #6a2c70;
 
 `

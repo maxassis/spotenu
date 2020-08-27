@@ -1,13 +1,14 @@
 import React from 'react'
 import * as S from './styled'
 
-function Header() {
+
+function Header(props) {
     return(
     <div>
         <S.Container>
-        <S.Titulo>Spotenu</S.Titulo>
-        <S.Botao1>Login</S.Botao1>
-        <S.Botao2>Signup</S.Botao2>
+        <S.Titulo><S.Linki3 to="/">Spotenu</S.Linki3></S.Titulo>
+        <S.Botao1><S.Linki to={props.url}>{props.pagina}</S.Linki></S.Botao1>
+        <S.Botao2><S.Linki2 to={props.url2}>{props.pagina2}</S.Linki2></S.Botao2>
         </S.Container>
     
     
