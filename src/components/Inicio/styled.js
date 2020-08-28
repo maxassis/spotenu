@@ -63,7 +63,7 @@ export const Container = styled.div`
   grid-template: auto auto / auto auto auto auto; 
   margin-left: 30px;
   max-width: 100%;
-  height: 600px;
+  height: 650px;
 `;
 
 export const Paragrafo1 = styled.p`
@@ -241,4 +241,52 @@ export const Linki = styled(Link)`
     color: black;
 
 
+`
+
+// MOBILE
+
+
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffe0f7 /*#ffe4e4*/;
+
+  max-width: 100%;
+  height: 600px;
+
+
+
+`
+
+export const Imagens = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 120px;
+  
+
+
+`
+
+export const Tela = styled.img`
+      margin-left: 40px;
+
+`
+
+export const Playlists = styled.div`
+  margin: 0 auto 0 auto;
+
+`
+
+export const P = styled.p`
+  text-align: center;
+  font-size: 38px;
+  font-family: 'Thasadith', sans-serif;
+`
+export const PP = styled.p`
+  margin-top: 15px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Thasadith', sans-serif;
 `

@@ -19,7 +19,7 @@ function Planos() {
         <S.ItemsRiscados><S.RedCross/> Modo offline</S.ItemsRiscados>
         <S.ItemsRiscados><S.RedCross/> Som Alta Definição</S.ItemsRiscados>
 
-        <S.Botao1>Cadastrar-se</S.Botao1>
+        <S.Botao1><S.Linki to="/signup">Cadastrar-se</S.Linki></S.Botao1>
 
         </S.Quadro1>
 
@@ -35,7 +35,7 @@ function Planos() {
         <S.Items><S.GreenCheck/> Modo offline</S.Items>
         <S.Items><S.GreenCheck/> Som Alta Definição</S.Items>
         
-        <S.Botao2>Assine<br/> Agora</S.Botao2>
+        <S.Botao2><S.Linki to="/signup">Assine<br/> Agora</S.Linki></S.Botao2>
 
         </S.Quadro2>
         </S.Quadros>
