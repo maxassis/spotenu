@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query'
 import { Check } from '@styled-icons/boxicons-regular/Check'
 import { Cross } from '@styled-icons/entypo/Cross'
 import { Link } from 'react-router-dom'
@@ -17,12 +18,25 @@ export const Violao = styled.div`
   flex-direction: column;
   background-image: url("https://images2.imgbox.com/b4/d2/ysVbBRq1_o.png");
 
+
+  ${media.lessThan("medium")`
+  background-position: center;
+  
+  `}
+
+
 `
 
 export const Anuncio = styled.div`
   color: white;
   margin-left: 110px;
   margin-bottom: 50px;
+
+  ${media.lessThan("medium")`
+    margin-left: 50px;
+  
+  `}
+  
 
 `
 
@@ -124,37 +138,62 @@ export const Capa6 = styled.img`
 
 export const Cont = styled.div`
     max-width: 100%;
-    height: 600px;
-    
+    height: 600px; 
+
+    ${media.lessThan("medium")`
+    height: 1040px;
+  
+  `}
+
+  
+
 `
 
 export const Quadros = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr
+    display: flex;
+    justify-content: space-around;
 
+  ${media.lessThan("medium")`
+    flex-direction: column;
+    align-items: center;
+  
+  `}
+    
 `
 
 export const Quadro1 = styled.div`
     width: 300px;
     height: 400px;
-    margin: auto;
     border:solid 1px;
     border-color: #ebecf1;
-    margin-right: 100px;
     border-radius: 4%;
+    margin-left: 80px;
+
+    ${media.lessThan("medium")`
+    margin-left: 0px;
+
+  
+  `}
+    
+  
     
 
 `
 export const Quadro2 = styled.div`
     width: 300px;
     height: 400px;
-    margin-left: 100px;
     border:solid 1px;
     border-radius: 4%;
     border-color: #fe91ca;
     box-shadow: 0 0 1em #fe91ca;
+    margin-right: 80px;
 
+    ${media.lessThan("medium")`
+    margin-top: 25px;
+    margin-right: 0px;
 
+  
+  `}
 
 `
 
@@ -255,6 +294,9 @@ export const Wrapper = styled.div`
   max-width: 100%;
   height: 600px;
 
+  ${media.lessThan("large")`
+
+  `}
 
 
 `

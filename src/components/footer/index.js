@@ -6,13 +6,14 @@ import * as S from './styled'
 function Footer() {
     return(
         <S.Container>
-         <div>   
+         <S.Sociais>   
         <S.Titulo>Spotenu</S.Titulo>
         <S.Insta/>
         <S.Face/>
         <S.twit/>
         <S.You/>
-         </div>       
+         </S.Sociais> 
+         
         <S.Tabela>
         <p>Spotenu</p><br/>
         <spam>Planos</spam>
@@ -41,7 +42,7 @@ function Footer() {
         <spam>Legal</spam>
         <spam>Contato</spam>
         </S.Tabela>
-
+         
         
         
         </S.Container>
