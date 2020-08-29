@@ -9,8 +9,8 @@ function Mobile() {
         <S.Wrapper>
 
          <S.Imagens>  
-        <S.Tela src={Img1} />
-        <S.Tela src={Img2} />
+        <S.Tela1 src={Img1} />
+        <S.Tela2 src={Img2} />
          </S.Imagens> 
 
          <S.Playlists>

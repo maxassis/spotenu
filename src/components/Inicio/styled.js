@@ -33,7 +33,7 @@ export const Anuncio = styled.div`
   margin-bottom: 50px;
 
   ${media.lessThan("medium")`
-    margin-left: 50px;
+    margin-left: 40px;
   
   `}
   
@@ -78,6 +78,25 @@ export const Container = styled.div`
   margin-left: 30px;
   max-width: 100%;
   height: 650px;
+
+  ${media.lessThan("large")`
+  grid-gap: 15px;
+  height: 750px;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+
+  grid-template-areas: "a1 a1 a1 a1"
+                       "a2 a2 a3 a3"        
+                       "a4 a4 a5 a5"    
+
+
+
+
+
+  `}
+
+
 `;
 
 export const Paragrafo1 = styled.p`
@@ -93,6 +112,14 @@ export const Paragrafo1 = styled.p`
     grid-column-start: 1;
     grid-column-end: 2;
 
+    ${media.lessThan("large")`
+    grid-area: a1;
+    text-align: center;
+  `} 
+
+
+
+
 `;
 
 export const Paragrafo2 = styled.p`
@@ -101,6 +128,10 @@ export const Paragrafo2 = styled.p`
     order: 5;
     text-align: left;
     padding-left: 40px;
+
+    ${media.lessThan("large")`
+    display: none;
+  `}
     
 
     `
@@ -108,26 +139,66 @@ export const Paragrafo2 = styled.p`
 export const Capa1 = styled.img`
     order: 2;
 
+    ${media.between("medium", "large")`
+    
+  `}
+
+    ${media.lessThan("large")`
+
+    grid-area: a2;
+  `}
+
+
+
+    
+
 `
 
 export const Capa2 = styled.img`
     order: 3;
 
+    ${media.lessThan("large")`
+  
+  
+    grid-area: a3;
+  `}
+
+
 `
 export const Capa3 = styled.img`
     order: 4;
+
+    ${media.lessThan("large")`
+    display: none;
+    
+  `}
+
 
 `
 export const Capa4 = styled.img`
     order: 6;
 
+    ${media.lessThan("large")`
+    
+    grid-area: a4;
+  `}
+
 `
 export const Capa5 = styled.img`
     order: 7;
 
+    ${media.lessThan("large")`
+    display: none;
+  `}
+
 `
 export const Capa6 = styled.img`
     order: 8;
+
+    ${media.lessThan("large")`
+    
+    grid-area: a5;
+  `}
 
 `
 
@@ -289,12 +360,17 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #ffe0f7 /*#ffe4e4*/;
+  background-color: #ffe0f7;
 
   max-width: 100%;
-  height: 600px;
+  height: 650px;
 
   ${media.lessThan("large")`
+    flex-direction: column-reverse;
+    height: 750px;
+    justify-content: center;
+    align-content: center;
+
 
   `}
 
@@ -306,18 +382,67 @@ export const Imagens = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   margin-left: 120px;
+
+  ${media.between("medium", "large")`
+  margin-right: auto;
+  margin-left: auto;
+  `}
+
+
+
+  ${media.lessThan("medium")`
+  margin-right: auto;
+  margin-left: auto;
+    
+  
+    
+
+  `}
   
 
 
 `
 
-export const Tela = styled.img`
+export const Tela1 = styled.img`
       margin-left: 40px;
+
+     ${media.lessThan("medium")`
+     display:none;
+       
+           
+  
+
+  `} 
+  
+  `
+
+  export const Tela2 = styled.img`
+      margin-left: 40px;
+
+     ${media.lessThan("medium")`
+     margin-left: auto;
+     margin-right: auto;
+       
+       
+           
+  
+
+  `} 
 
 `
 
 export const Playlists = styled.div`
-  margin: 0 auto 0 auto;
+      margin: auto;
+
+      ${media.lessThan("large")`
+      margin-top: 20px;
+      margin-bottom: 50px;
+      margin-right: auto;
+  
+
+  `} 
+ 
+
 
 `
 
@@ -328,7 +453,15 @@ export const P = styled.p`
 `
 export const PP = styled.p`
   margin-top: 15px;
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   font-family: 'Thasadith', sans-serif;
+
+  ${media.lessThan("large")`
+    font-size: 15px;
+  
+
+  `}
+
+
 `

@@ -51,7 +51,7 @@ export const Tabela = styled.div`
         font-family: 'Thasadith', sans-serif;
         color: #6a2c70;
     }
-    spam{
+    span{
         display:block;
         font-size: 16px;
         padding: 10px 0 10px 0;

@@ -16,31 +16,31 @@ function Footer() {
          
         <S.Tabela>
         <p>Spotenu</p><br/>
-        <spam>Planos</spam>
-        <spam>Dispositivos</spam>
-        <spam>Download Spotenu</spam>
-        <spam>Ajuda</spam>
+        <span>Planos</span>
+        <span>Dispositivos</span>
+        <span>Download Spotenu</span>
+        <span>Ajuda</span>
         </S.Tabela>
         <S.Tabela>
         <p>Explorar</p><br/>
-        <spam>Mais Ouvidas</spam>
-        <spam>Top Podcasts</spam>
-        <spam>Lançamentos</spam>
-        <spam>Videos</spam>
+        <span>Mais Ouvidas</span>
+        <span>Top Podcasts</span>
+        <span>Lançamentos</span>
+        <span>Videos</span>
         </S.Tabela>
         <S.Tabela>
         <p>Conta</p><br/>
-        <spam>Signup</spam>
-        <spam>Resgatar Voucher</spam>
-        <spam>Gerenciar Conta</spam>
-        <spam>Loja</spam>
+        <span>Signup</span>
+        <span>Resgatar Voucher</span>
+        <span>Gerenciar Conta</span>
+        <span>Loja</span>
         </S.Tabela>
         <S.Tabela>
         <p>Sobre</p><br/>
-        <spam>Politica de Privacidade</spam>
-        <spam>Termos e Condiçoes de Uso</spam>
-        <spam>Legal</spam>
-        <spam>Contato</spam>
+        <span>Politica de Privacidade</span>
+        <span>Termos e Condiçoes de Uso</span>
+        <span>Legal</span>
+        <span>Contato</span>
         </S.Tabela>
          
         
