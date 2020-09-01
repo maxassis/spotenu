@@ -9,33 +9,31 @@ import { useForm } from "react-hook-form";
 
 
 
-
-
-
-
-
 function SignupUnico() {
     const { register, errors, handleSubmit } = useForm();
     const [valor, setValor] = useState()
     const history = useHistory()
+    
 
    function onSubmit(data) {
     
     const body = {
+        name: data.name,
+        nickname: data.nickname,
         email: data.email,
-        password: data.password
+        password: data.password,
+        type: data.type,
+
     }
     console.log(body)
 
-    axios.post('http://localhost:8000/signup', body).then((response) => {
+    axios.post('https://localhost:8000/signup', body).then((response) => {
         console.log(response)
         alert("Cadastro Efetuado com Sucesso")
         history.push("/login")
     }).catch(error => {
         console.log(error.response)
     })
-
-
   }
 
 

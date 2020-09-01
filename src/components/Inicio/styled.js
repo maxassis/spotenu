@@ -17,14 +17,11 @@ export const Violao = styled.div`
   display:flex;
   flex-direction: column;
   background-image: url("https://images2.imgbox.com/b4/d2/ysVbBRq1_o.png");
-
-
+  
   ${media.lessThan("medium")`
   background-position: center;
   
   `}
-
-
 `
 
 export const Anuncio = styled.div`
@@ -37,7 +34,6 @@ export const Anuncio = styled.div`
   
   `}
   
-
 `
 
 export const P1 = styled.p`
@@ -85,18 +81,15 @@ export const Container = styled.div`
   margin: auto;
   justify-content: center;
   align-content: center;
-
   grid-template-areas: "a1 a1 a1 a1"
                        "a2 a2 a3 a3"        
                        "a4 a4 a5 a5"    
-
   `}
 
   ${media.lessThan("small")`
   height: 620px;
   grid-gap: 5px;
-  `}   
-
+  `}  
 
 `;
 
@@ -118,14 +111,9 @@ export const Paragrafo1 = styled.p`
     text-align: center;
   `} 
 
-
   ${media.lessThan("small")`
     font-size: 28px;
   `} 
-
-
-
-
 `;
 
 export const Paragrafo2 = styled.p`
@@ -139,28 +127,21 @@ export const Paragrafo2 = styled.p`
     display: none;
   `}
     
-
     `
 
 export const Capa1 = styled.img`
     order: 2;
-
   
     ${media.lessThan("large")`
     grid-area: a2;
   `}
-
 
   ${media.lessThan("small")`
       width: 50vw;
       align-self: center;
       justify-self: center;
   `} 
-
-
-
     
-
 `
 
 export const Capa2 = styled.img`
@@ -175,9 +156,7 @@ export const Capa2 = styled.img`
       align-self: center;
       justify-self: center;
   `} 
-
   
-
 `
 export const Capa3 = styled.img`
     order: 4;
@@ -186,8 +165,6 @@ export const Capa3 = styled.img`
     display: none;
     
   `}
-
-
 `
 export const Capa4 = styled.img`
     order: 6;
@@ -201,7 +178,6 @@ export const Capa4 = styled.img`
       align-self: center;
       justify-self: center;
   `} 
-
 `
 export const Capa5 = styled.img`
     order: 7;
@@ -209,7 +185,6 @@ export const Capa5 = styled.img`
     ${media.lessThan("large")`
     display: none;
   `}
-
 `
 export const Capa6 = styled.img`
     order: 8;
@@ -223,8 +198,6 @@ export const Capa6 = styled.img`
       align-self: center;
       justify-self: center;
   `} 
-
-
 `
 
 
@@ -240,9 +213,7 @@ export const Cont = styled.div`
     height: 1040px;
   
   `}
-
   
-
 `
 
 export const Quadros = styled.div`
@@ -267,13 +238,11 @@ export const Quadro1 = styled.div`
 
     ${media.lessThan("medium")`
     margin-left: 0px;
-
   
   `}
     
   
     
-
 `
 export const Quadro2 = styled.div`
     width: 300px;
@@ -287,10 +256,8 @@ export const Quadro2 = styled.div`
     ${media.lessThan("medium")`
     margin-top: 25px;
     margin-right: 0px;
-
   
   `}
-
 `
 
 
@@ -301,9 +268,6 @@ export const Vantagens = styled.p`
     padding-top: 35px;
     padding-bottom: 45px;
     
-
-
-
 `
 
 export const Premium = styled.p`
@@ -313,34 +277,28 @@ export const Premium = styled.p`
     padding-top: 30px;
     padding-bottom: 30px;
     
-
 `
 
 export const GreenCheck = styled(Check)`
     color: green;
     width: 25px;
-
 `
 
 export const RedCross = styled(Cross)`
   color: red;
   width: 25px;
-
 `
 
 export const Items = styled.p`
   margin-left: 20px;
   font-family: 'Thasadith', sans-serif;
   font-size: 15px;
-
-
 `
 export const ItemsRiscados = styled.p`
   text-decoration: line-through;
   margin-left: 20px;
   font-family: 'Thasadith', sans-serif;
   font-size: 15px;
-
 `
 
 export const Botao2 = styled.button`
@@ -374,8 +332,6 @@ export const Botao1 = styled.button`
 export const Linki = styled(Link)`
     text-decoration: none;
     color: black;
-
-
 `
 
 // MOBILE
@@ -386,7 +342,6 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: #ffe0f7;
-
   max-width: 100%;
   height: 650px;
 
@@ -395,11 +350,7 @@ export const Wrapper = styled.div`
     height: 750px;
     justify-content: center;
     align-content: center;
-
-
   `}
-
-
 `
 
 export const Imagens = styled.div`
@@ -413,19 +364,14 @@ export const Imagens = styled.div`
   margin-left: auto;
   `}
 
-
-
   ${media.lessThan("medium")`
   margin-right: auto;
   margin-left: auto;
     
   
     
-
   `}
   
-
-
 `
 
 export const Tela1 = styled.img`
@@ -436,7 +382,6 @@ export const Tela1 = styled.img`
        
            
   
-
   `} 
   
   `
@@ -449,11 +394,8 @@ export const Tela1 = styled.img`
      margin-right: auto;
        
        
-           
-  
-
+          
   `} 
-
 `
 
 export const Playlists = styled.div`
@@ -464,11 +406,8 @@ export const Playlists = styled.div`
       margin-bottom: 50px;
       margin-right: auto;
   
-
   `} 
  
-
-
 `
 
 export const P = styled.p`
@@ -485,8 +424,5 @@ export const PP = styled.p`
   ${media.lessThan("large")`
     font-size: 15px;
   
-
   `}
-
-
 `
