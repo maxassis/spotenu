@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import axios from 'axios'
+import { useHistory } from "react-router-dom"
 import * as S from './styled'
 import Header from '../../header/index'
 import Footer from '../../footer/index'
@@ -6,15 +8,40 @@ import { useForm } from "react-hook-form";
 
 
 
+
+
+
+
+
+
 function SignupUnico() {
     const { register, errors, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data) ;
-
     const [valor, setValor] = useState()
+    const history = useHistory()
+
+   function onSubmit(data) {
+    
+    const body = {
+        email: data.email,
+        password: data.password
+    }
+    console.log(body)
+
+    axios.post('http://localhost:8000/signup', body).then((response) => {
+        console.log(response)
+        alert("Cadastro Efetuado com Sucesso")
+        history.push("/login")
+    }).catch(error => {
+        console.log(error.response)
+    })
+
+
+  }
+
 
     const inputSelect = (event) => {
         setValor(event.target.value)
-      }
+      } 
               
 
     return(

@@ -90,11 +90,12 @@ export const Container = styled.div`
                        "a2 a2 a3 a3"        
                        "a4 a4 a5 a5"    
 
-
-
-
-
   `}
+
+  ${media.lessThan("small")`
+  height: 620px;
+  grid-gap: 5px;
+  `}   
 
 
 `;
@@ -115,6 +116,11 @@ export const Paragrafo1 = styled.p`
     ${media.lessThan("large")`
     grid-area: a1;
     text-align: center;
+  `} 
+
+
+  ${media.lessThan("small")`
+    font-size: 28px;
   `} 
 
 
@@ -139,14 +145,17 @@ export const Paragrafo2 = styled.p`
 export const Capa1 = styled.img`
     order: 2;
 
-    ${media.between("medium", "large")`
-    
-  `}
-
+  
     ${media.lessThan("large")`
-
     grid-area: a2;
   `}
+
+
+  ${media.lessThan("small")`
+      width: 50vw;
+      align-self: center;
+      justify-self: center;
+  `} 
 
 
 
@@ -158,11 +167,16 @@ export const Capa2 = styled.img`
     order: 3;
 
     ${media.lessThan("large")`
-  
-  
     grid-area: a3;
   `}
 
+  ${media.lessThan("small")`
+      width: 50vw;
+      align-self: center;
+      justify-self: center;
+  `} 
+
+  
 
 `
 export const Capa3 = styled.img`
@@ -178,10 +192,15 @@ export const Capa3 = styled.img`
 export const Capa4 = styled.img`
     order: 6;
 
-    ${media.lessThan("large")`
-    
+    ${media.lessThan("large")`  
     grid-area: a4;
   `}
+
+  ${media.lessThan("small")`
+      width: 50vw;
+      align-self: center;
+      justify-self: center;
+  `} 
 
 `
 export const Capa5 = styled.img`
@@ -196,9 +215,15 @@ export const Capa6 = styled.img`
     order: 8;
 
     ${media.lessThan("large")`
-    
     grid-area: a5;
   `}
+
+  ${media.lessThan("small")`
+      max-width: 50vw;
+      align-self: center;
+      justify-self: center;
+  `} 
+
 
 `
 
