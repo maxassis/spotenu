@@ -15,26 +15,29 @@ function SignupUnico() {
     const history = useHistory()
     
 
-   function onSubmit(data) {
+  async function onSubmit(data) {
     
     const body = {
         name: data.name,
-        nickname: data.nickname,
         email: data.email,
+        nickname: data.nickname,
         password: data.password,
-        type: data.type,
+        role: data.type,
+        description: data.description
 
     }
     console.log(body)
 
-    axios.post('https://localhost:8000/signup', body).then((response) => {
+    await axios.post('http://localhost:3030/signup', body 
+    ).then((response) => {
         console.log(response)
-        alert("Cadastro Efetuado com Sucesso")
+        alert("cadastro efetuado com sucesso")
         history.push("/login")
     }).catch(error => {
         console.log(error.response)
     })
-  }
+}
+  
 
 
     const inputSelect = (event) => {

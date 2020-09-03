@@ -1,13 +1,36 @@
 import React from 'react'
 import Header from '../header/index'
 import Footer from '../footer/index'
+import axios from 'axios'
 import * as S from './styled'
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom"
 
 
-function Login() {
+    function Login() {
+    const history = useHistory();    
     const { register, errors, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    
+    async function onSubmit(data) {
+        const body = {
+            email: data.email,
+            password: data.password
+          }
+    
+          try {
+          const response = await axios.post(`http://localhost:3030/login`, body);
+          localStorage.setItem("token", response.data.token)
+          alert("login realizado com sucesso")
+          history.push("/")
+          console.log(response.data.token)
+          } catch (e) {
+            alert("Usuario ou senha Invalidos")
+            localStorage.clear()
+    
+          }
+
+    }
+
 
     return(
         <>
