@@ -5,6 +5,8 @@ import * as S from './styled'
 import Header from '../../header/index'
 import Footer from '../../footer/index'
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 
 
@@ -13,6 +15,7 @@ function SignupUnico() {
     const { register, errors, handleSubmit } = useForm();
     const [valor, setValor] = useState()
     const history = useHistory()
+    const MySwal = withReactContent(Swal)
     
 
   async function onSubmit(data) {
@@ -31,10 +34,23 @@ function SignupUnico() {
     await axios.post('http://localhost:3030/signup', body 
     ).then((response) => {
         console.log(response)
-        alert("cadastro efetuado com sucesso")
+        
+        MySwal.fire(
+            'Cadastrado!',
+            'Cadastro realizado com sucesso ',
+            'success'
+        )
+
         history.push("/login")
     }).catch(error => {
         console.log(error.response)
+
+        MySwal.fire({
+            icon: 'error',
+            title: 'Erro',
+            text: 'Usuario ja Cadastrado',
+          })
+
     })
 }
   

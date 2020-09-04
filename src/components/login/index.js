@@ -5,6 +5,8 @@ import axios from 'axios'
 import * as S from './styled'
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom"
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 
     function Login() {
@@ -24,7 +26,16 @@ import { useHistory } from "react-router-dom"
           history.push("/")
           console.log(response.data.token)
           } catch (e) {
-            alert("Usuario ou senha Invalidos")
+
+            const MySwal = withReactContent(Swal)
+            MySwal.fire( 
+                {
+                    icon: 'error',
+                    title: 'Dados Invalidos!',
+                    text: 'Verifique seus dados e tente novamente',
+                  }
+            )
+            
             localStorage.clear()
     
           }
