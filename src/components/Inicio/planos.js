@@ -2,6 +2,8 @@ import React from 'react'
 import * as S from './styled'
 
 
+
+
 function Planos() {
     return(
         <S.Cont>
@@ -35,7 +37,7 @@ function Planos() {
         <S.Items><S.GreenCheck/> Modo offline</S.Items>
         <S.Items><S.GreenCheck/> Som Alta Definição</S.Items>
         
-        <S.Botao2><S.Linki to="/signup">Assine<br/> Agora</S.Linki></S.Botao2>
+        <S.Botao2><S.Linki2 to="/signup">Assine<br/> Agora</S.Linki2></S.Botao2>
 
         </S.Quadro2>
         </S.Quadros>
@@ -44,7 +46,6 @@ function Planos() {
         
         
         </S.Cont>
-
 
 
 

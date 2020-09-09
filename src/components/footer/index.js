@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from './styled'
+import Logo from '../imagens/logo.png'
 
 
 
@@ -7,7 +8,7 @@ function Footer() {
     return(
         <S.Container>
          <S.Sociais>   
-        <S.Titulo>Spotenu</S.Titulo>
+        <S.Titulo><S.Spotenu src={Logo}/></S.Titulo>
         <S.Insta/>
         <S.Face/>
         <S.twit/>

@@ -107,3 +107,8 @@ ${media.lessThan("medium")`
 
 
 `
+export const Spotenu = styled.img`
+    width: 10vw;
+
+
+`

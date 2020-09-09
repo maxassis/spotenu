@@ -72,3 +72,11 @@ export const Linki3 = styled(Link)`
 
 `
 
+export const Spotenu = styled.img`
+    width: 12vw;
+    
+
+
+
+`
+

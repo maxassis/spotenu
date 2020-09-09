@@ -5,6 +5,7 @@ import { Cross } from '@styled-icons/entypo/Cross'
 import { Link } from 'react-router-dom'
 
 
+
 export const Imagem = styled.img`
   width: 100%;
 `
@@ -61,6 +62,7 @@ export const BotaoAssinar = styled.button`
   font-family: "Thasadith", sans-serif;
   font-size: 15px;
   background-color: #fe91ca;
+  
 `;
 
 
@@ -249,15 +251,16 @@ export const Quadro2 = styled.div`
     height: 400px;
     border:solid 1px;
     border-radius: 4%;
-    border-color: #fe91ca;
-    box-shadow: 0 0 1em #fe91ca;
+    border-color: #6a2c70; ;
+    box-shadow: 0 0 0.1em #6a2c70; 
     margin-right: 80px;
+
 
     ${media.lessThan("medium")`
     margin-top: 25px;
     margin-right: 0px;
   
-  `}
+  `} 
 `
 
 
@@ -302,19 +305,24 @@ export const ItemsRiscados = styled.p`
 `
 
 export const Botao2 = styled.button`
-    background-color: #fe91ca;
-    color: black;
+   
+
+    background-color: #6a2c70;
+    color: #0000;
     border: none;
     border-radius: 50px;
     width: 150px;
     padding: 10px;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Thasadith', sans-serif; ;
     margin-left: 75px;
     margin-top: 50px;
     font-size: 15px;
-    box-shadow: 0 0 1em #fe91ca;
-    
+    box-shadow: 0 0 1em #6a2c70; 
+
+  
 `
+
+
 export const Botao1 = styled.button`
     background-color: #e8ded2;
     color: black;
@@ -334,8 +342,13 @@ export const Linki = styled(Link)`
     color: black;
 `
 
-// MOBILE
+export const Linki2 = styled(Link)`
+    text-decoration: none;
+    color: white;
+`
 
+
+// MOBILE
 
 export const Wrapper = styled.div`
   display: flex;
@@ -426,3 +439,7 @@ export const PP = styled.p`
   
   `}
 `
+
+
+
+
