@@ -1,123 +1,80 @@
-import React, {useState} from 'react'
-import axios from 'axios'
-import { useHistory } from "react-router-dom"
-import * as S from './styled'
-import Header from '../../header/index'
-import Footer from '../../footer/index'
+import React from "react";
+import * as S from "./styled";
+import Header from "../../header/index";
+import Footer from "../../footer/index";
 import { useForm } from "react-hook-form";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-
-
-
 
 function SignupUnico() {
-    const { register, errors, handleSubmit } = useForm();
-    const [valor, setValor] = useState()
-    const history = useHistory()
-    const MySwal = withReactContent(Swal)
-    
+  const { register, errors, handleSubmit } = useForm();
 
-  async function onSubmit(data) {
-    
-    const body = {
-        name: data.name,
-        email: data.email,
-        nickname: data.nickname,
-        password: data.password,
-        role: data.type,
-        description: data.description
+  function onSubmit() {
+    console.log("max");
+  }
 
-    }
-    console.log(body)
-
-    await axios.post('http://localhost:3030/signup', body 
-    ).then((response) => {
-        console.log(response)
-        
-        MySwal.fire(
-            'Cadastrado!',
-            'Cadastro realizado com sucesso ',
-            'success'
-        )
-
-        history.push("/login")
-    }).catch(error => {
-        console.log(error.response)
-
-        MySwal.fire({
-            icon: 'error',
-            title: 'Erro',
-            text: 'Usuario ja Cadastrado',
-          })
-
-    })
-}
-  
-
-
-    const inputSelect = (event) => {
-        setValor(event.target.value)
-      } 
-              
-
-    return(
-        <>
-        <Header pagina="Inicio" pagina2="Login" url="/" url2="/login"/>
-        <S.Container>
+  return (
+    <>
+      <Header pagina="Inicio" pagina2="Login" url="/" url2="/login" />
+      <S.Container>
         <S.ContSignup>
-            <S.Divi>
+          <S.Divi>
             <S.Texto>Cadastro</S.Texto>
-            </S.Divi>
+          </S.Divi>
 
-            <S.Formulario onSubmit={handleSubmit(onSubmit)}>
-
+          <S.Formulario onSubmit={handleSubmit(onSubmit)}>
             <S.Leibel> Tipo de Conta </S.Leibel>
-            <S.Selecti name="type" ref={register({ required: true})} onChange={inputSelect}  >
-                <option value=""></option>
-                <option value="premium">Premium</option>
-                <option value="free">Free</option>
-                <option value="banda">Banda</option>
+            <S.Selecti name="type" ref={register({ required: true })}>
+              <option value=""></option>
+              <option value="premium">Premium</option>
+              <option value="free">Free</option>
+              <option value="banda">Banda</option>
             </S.Selecti>
-            {errors.type && "Escolha um plano"}    
+            {errors.type && "Escolha um plano"}
 
             <S.Leibel> Nome </S.Leibel>
-            <S.Inputi placeholder="Digite seu nome" name="name" ref={register({ required: true})} />
+            <S.Inputi
+              placeholder="Digite seu nome"
+              name="name"
+              ref={register({ required: true })}
+            />
             {errors.name && "Digite um nome"}
 
             <S.Leibel> Nickname </S.Leibel>
-            <S.Inputi placeholder="Digite seu nickname" name="nickname" ref={register({ required: true})} />
+            <S.Inputi
+              placeholder="Digite seu nickname"
+              name="nickname"
+              ref={register({ required: true })}
+            />
             {errors.nickname && "Digite um nickname"}
 
             <S.Leibel> Email </S.Leibel>
-            <S.Inputi placeholder="Digite seu email" name="email" ref={register({ required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })} />
+            <S.Inputi
+              placeholder="Digite seu email"
+              name="email"
+              ref={register({
+                required: true,
+                pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+              })}
+            />
             {errors.email && "Digite um email valido"}
 
-            {valor==="banda" && <><S.Leibel> Descrição </S.Leibel><S.TextArea></S.TextArea></> }
-
-           <S.Leibel> Senha </S.Leibel>
-            <S.Inputi label="password" placeholder="Digite uma senha" name="password" type="password" ref={register({ required: true, minLength: 8})} />
+            <S.Leibel> Senha </S.Leibel>
+            <S.Inputi
+              label="password"
+              placeholder="Digite uma senha"
+              name="password"
+              type="password"
+              ref={register({ required: true, minLength: 8 })}
+            />
             {errors.password && "Digite uma senha com no minimo 8 caracteres"}
 
-            <S.Botao type="submit">Enviar</S.Botao> 
+            <S.Botao type="submit">Enviar</S.Botao>
+          </S.Formulario>
+        </S.ContSignup>
+      </S.Container>
 
-            </S.Formulario>
-
-    
-        </S.ContSignup> 
-
-        </S.Container>
-
-        <Footer/>
-
-        </>
-
-
-    )
-
-
-
-
+      <Footer />
+    </>
+  );
 }
 
-export default SignupUnico
+export default SignupUnico;

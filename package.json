@@ -14,9 +14,7 @@
     "react-scripts": "3.4.3",
     "styled-components": "^5.1.1",
     "styled-icons": "^10.17.0",
-    "styled-media-query": "^2.1.2",
-    "sweetalert2": "^9.17.2",
-    "sweetalert2-react-content": "^3.1.0"
+    "styled-media-query": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
