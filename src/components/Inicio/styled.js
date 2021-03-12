@@ -3,6 +3,7 @@ import media from "styled-media-query";
 import { Check } from "@styled-icons/boxicons-regular/Check";
 import { Cross } from "@styled-icons/entypo/Cross";
 import { Link } from "react-router-dom";
+import back from "../imagens/back.png";
 
 export const Imagem = styled.img`
   width: 100%;
@@ -15,7 +16,7 @@ export const Violao = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url("https://images2.imgbox.com/b4/d2/ysVbBRq1_o.png");
+  background: url(${back}) no-repeat;
 
   ${media.lessThan("medium")`
   background-position: center;
