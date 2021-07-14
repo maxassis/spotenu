@@ -39,11 +39,19 @@ export const P1 = styled.p`
   font-family: "Thasadith", sans-serif;
   font-size: 40px;
   margin-bottom: 30px;
+
+  ${media.lessThan("small")`
+  font-size: 32px;
+  `}
 `;
 
 export const P2 = styled.p`
   font-family: "Thasadith", sans-serif;
   font-size: 70px;
+
+  ${media.lessThan("small")`
+  font-size: 55px;
+  `}
 `;
 export const P3 = styled.p`
   font-family: "Thasadith", sans-serif;
@@ -401,6 +409,7 @@ export const PP = styled.p`
   text-align: center;
   font-size: 20px;
   font-family: "Thasadith", sans-serif;
+  line-height: normal;
 
   ${media.lessThan("large")`
     font-size: 15px;
